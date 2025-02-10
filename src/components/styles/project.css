@@ -1,0 +1,150 @@
+.projectcontent {
+  background-image: url("../images/projectpage/Background.png");
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.projectbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.projectbody h5 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+.dateform {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.date {
+  width: 80;
+}
+.react-datepicker {
+  border-radius: 20px;
+}
+
+.react-datepicker__input-container input {
+  width: 50vw;
+  background: none;
+  border: 1px solid var(--Glass1-Stroke-Carey, #afafaf);
+  padding: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.react-datepicker__input-container input::placeholder {
+  color: #ffffff;
+}
+.react-datepicker__month-container {
+  padding: 40px;
+  width: calc(50vw - 40px);
+}
+.react-datepicker__day-names {
+  background-color: #ffffff;
+  color: #8f99a8;
+}
+.react-datepicker__day-name {
+  color: #8f99a8;
+}
+.react-datepicker__header {
+  border: none;
+  background-color: #ffffff;
+}
+
+.react-datepicker__day--selected {
+  background: #b9e0e1;
+}
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: #b9e0e1;
+}
+.react-datepicker__navigation {
+  margin-top: 8px;
+}
+.submitbutton {
+  display: flex;
+  padding: 14px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: calc(50vw + 40px);
+  border-radius: 20px;
+  background: radial-gradient(
+    100% 100% at 100% 100%,
+    rgba(0, 173, 181, 1) 0%,
+    rgba(0, 173, 181, 1) 100%
+  );
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.datesadded {
+  display: flex;
+  justify-content: center;
+  color: rgba(34, 40, 49, 1);
+  border-radius: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.datesadded::-webkit-scrollbar {
+  display: none;
+}
+.datemain {
+  background-color: rgba(0, 173, 181, 0.5);
+  padding: 5px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.datemain h5 {
+  font-size: 20px;
+}
+.datebody {
+  background-color: rgba(38, 111, 114, 0.65);
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 50px;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+}
+.calculatebutton {
+  margin: 40px auto 40px auto;
+}
+@media screen and (max-width: 1000px) {
+  .projectcontent h1 {
+    text-align: center;
+  }
+  .react-datepicker__month-container {
+    padding: 0px;
+    width: calc(90vw + 25px);
+    margin: auto 0px auto;
+  }
+  .react-datepicker__input-container input {
+    width: 90vw;
+  }
+  .datesadded {
+    width: 100%;
+    flex-direction: column;
+  }
+  .datemain {
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+    border-radius: 0px;
+  }
+  .datebody {
+    justify-content: center;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+  }
+}
